@@ -1,7 +1,29 @@
-.someClass {
+.wrapp {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
 
+.title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.input {
+    width: 85%;
+    border-radius: 5px;
+}
+
+.button {
+    margin-left: 5px;
+    border-radius: 10px;
 }
 
 .error {
-    border: 1px solid red;
+    color: red
 }
