@@ -1,7 +1,7 @@
 export const JuniorPlus = () => {
   return (
     <div>
-      ZCX
+      Under development
     </div>
   )
 }
