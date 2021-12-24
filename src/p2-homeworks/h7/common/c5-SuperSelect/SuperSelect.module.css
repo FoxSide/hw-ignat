@@ -1,0 +1,14 @@
+.select {
+    height: 30px;
+    font-size: 20px;
+    background-color: orange;
+    border: 2px solid ;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.option {
+}
+.option:checked{
+    background-color: orangered;
+}

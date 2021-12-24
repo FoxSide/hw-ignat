@@ -14,10 +14,19 @@
     text-decoration: none;
     color: black;
     margin-left: 10px;
+    font-weight: bold;
 }
 .item:hover {
     color: red;
 }
+
+.active{
+    text-decoration: none;
+    color: green;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
 .menu {
     border: 2px solid;
 }

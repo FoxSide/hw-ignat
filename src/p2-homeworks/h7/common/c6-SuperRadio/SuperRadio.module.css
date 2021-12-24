@@ -1,0 +1,26 @@
+.radioBlock {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.label {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.label input {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
+
+.label input:checked {
+    background: orangered;
+}
