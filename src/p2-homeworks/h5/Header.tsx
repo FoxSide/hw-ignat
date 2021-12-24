@@ -10,7 +10,6 @@ function Header() {
       <NavLink to={path.PreJunior} className={({isActive})=> isActive ? s.active : s.item}>Pre-Junior</NavLink>
       <NavLink to={path.Junior} className={({isActive})=> isActive ? s.active : s.item}>Junior</NavLink>
       <NavLink to={path.JuniorPlus} className={({isActive})=> isActive ? s.active : s.item}>Junior-Plus</NavLink>
-      <div className={s.block}/>
     </div>
   )
 }

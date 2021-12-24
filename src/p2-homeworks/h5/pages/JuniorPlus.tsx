@@ -1,6 +1,8 @@
 export const JuniorPlus = () => {
   return (
-    <div>
+    <div style={{
+      marginTop: '50px'
+    }}>
       Under development
     </div>
   )
