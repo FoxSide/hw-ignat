@@ -1,0 +1,28 @@
+.wrapp {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.title {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.body {
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    font-weight: bold;
+}

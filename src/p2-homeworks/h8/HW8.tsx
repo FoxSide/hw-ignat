@@ -1,48 +1,66 @@
 import React, {useState} from 'react'
 import {homeWorkReducer} from './bll/homeWorkReducer'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import s from './HW8.module.css'
 
-// export type UserType =
+export type UserType = {
+  _id: number
+  name: string
+  age: number
+}
+type SortUpACType = {
+  type: 'sortUp'
+}
+type SortDownACType = {
+  type: 'sortDown'
+}
+type CheckACType = {
+  type: 'check'
+}
+
+export type ActionsType = SortUpACType | SortDownACType | CheckACType
+
 
 const initialPeople = [
-    {_id: 0, name: 'Кот', age: 3},
-    {_id: 1, name: 'Александр', age: 66},
-    {_id: 2, name: 'Коля', age: 16},
-    {_id: 3, name: 'Виктор', age: 44},
-    {_id: 4, name: 'Дмитрий', age: 40},
-    {_id: 5, name: 'Ирина', age: 55},
+  {_id: 0, name: 'Кот', age: 3},
+  {_id: 1, name: 'Александр', age: 66},
+  {_id: 2, name: 'Коля', age: 16},
+  {_id: 3, name: 'Виктор', age: 44},
+  {_id: 4, name: 'Дмитрий', age: 40},
+  {_id: 5, name: 'Ирина', age: 55},
 ]
 
+export const sortUpAC = () => ({type: 'sortUp'} as const)
+export const sortDownAC = () => ({type: 'sortDown'} as const)
+export const checkAC = () => ({type: 'check'} as const)
+
 function HW8() {
-    const [people, setPeople] = useState<any>(initialPeople) // need to fix any
+  const [people, setPeople] = useState<Array<UserType>>(initialPeople)
 
-    // need to fix any
-    const finalPeople = people.map((p: any) => (
-        <div key={p._id}>
-            some name, age
-        </div>
-    ))
+  const finalPeople = people.map((p: UserType) => (
+    <div key={p._id} className={s.item}>
+      <div>{p.name}</div>
+      <div>{p.age}</div>
+    </div>
+  ))
 
-    const sortUp = () => setPeople(homeWorkReducer(initialPeople, {type: 'sort', payload: 'up'}))
+  const sortUp = () => setPeople(homeWorkReducer(initialPeople, sortUpAC()))
+  const sortDown = () => setPeople(homeWorkReducer(initialPeople, sortDownAC()))
+  const check = () => setPeople(homeWorkReducer(initialPeople, checkAC()))
 
-    return (
-        <div>
-            <hr/>
-            homeworks 8
 
-            {/*should work (должно работать)*/}
-            {finalPeople}
 
-            <div><SuperButton onClick={sortUp}>sort up</SuperButton></div>
-            <div>sort down</div>
-            check 18
-
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativePeople/>*/}
-            <hr/>
-        </div>
-    )
+  return (
+    <div className={s.wrapp}>
+      <div className={s.title}>Homework 8 :</div>
+      <div className={s.body}>{finalPeople}</div>
+      <div>
+      <SuperButton onClick={sortUp}>Sort up</SuperButton>
+      <SuperButton onClick={sortDown}>Sort down</SuperButton>
+      <SuperButton onClick={check}>Check 18</SuperButton>
+      </div>
+    </div>
+  )
 }
 
 export default HW8
