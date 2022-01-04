@@ -6,6 +6,7 @@
     align-items: center;
     margin-top: 10px;
 }
+
 .item {
     display: flex;
     align-items: center;
@@ -30,15 +31,14 @@
     border-radius: 10px;
     padding: 5px;
     transition-duration: 300ms;
-    box-shadow: 5px 5px 5px;
     font-weight: bold;
+    margin-top: 15px;
+    box-shadow: none;
 }
 
 .item:hover {
     color: black;
-    margin-top: 15px;
     transition-duration: 300ms;
-    box-shadow: none;
 }
 
 .text {
