@@ -5,7 +5,7 @@ import s from './HW9.module.css'
 function HW9() {
   return (
     <div className={s.wrapp}>
-      <div className={s.title}>Homework 8 :</div>
+      <div className={s.title}>Homework 9 :</div>
       <Clock/>
     </div>
   )
