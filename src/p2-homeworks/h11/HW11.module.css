@@ -1,0 +1,28 @@
+.wrapp {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.title {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.value {
+    display: flex;
+    justify-content: center;
+    width: 25px;
+}
+
+.container {
+    display: flex;
+}
+
+.doubleRange {
+    width: 200px;
+}
