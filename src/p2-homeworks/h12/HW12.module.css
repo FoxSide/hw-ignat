@@ -1,9 +1,47 @@
+.wrapp {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.selectBody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
 .dark {
     background: dimgrey;
 }
 
 .dark-text {
     color: aliceblue;
+}
+
+.blue {
+    background: #5daeb9;
+}
+
+.blue-text {
+    color: red;
+}
+
+.orange {
+    background: orange;
+}
+
+.orange-text {
+    color: black;
 }
 
 .red {
