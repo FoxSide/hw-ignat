@@ -19,15 +19,15 @@ function HW10() {
   return (
     <div className={s.wrapp}>
       <div className={s.title}>Homework 10 :</div>
-      {state.isLoading
-        ? (
-          <img className={s.loader} src={loader} alt={'loader'}/>
-        ) : (
-          <div>
+      <div className={s.container}>
+        {state.isLoading
+          ? (
+            <img className={s.loader} src={loader} alt={'loader'}/>
+          ) : (
             <SuperButton onClick={setLoading}>set loading...</SuperButton>
-          </div>
-        )
-      }
+          )
+        }
+      </div>
     </div>
   )
 }

@@ -31,7 +31,6 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
           onChange={handleChange}
           valueLabelDisplay="auto"
           aria-labelledby="range-slider"
-          // getAriaValueText={valuetext}
         />
       </div>
     </>
