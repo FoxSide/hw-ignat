@@ -1,9 +1,9 @@
+import HW13 from "../../HW13/HW13";
+
 export const JuniorPlus = () => {
   return (
-    <div style={{
-      marginTop: '50px'
-    }}>
-      Under development
+    <div>
+      <HW13/>
     </div>
   )
 }
